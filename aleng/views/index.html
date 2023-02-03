@@ -1,0 +1,74 @@
+<html>
+
+<head>
+  <title>Aleng Leaf Health Prediction</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="bootstrap.css" />
+  <!--Bootstrap CSS-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ovo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.7.0"> </script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis@1.5.1/dist/tfjs-vis.umd.min.js"></script>
+  <script async src="../opencv.js" type="text/javascript"></script>
+</head>
+
+
+<body>
+  <nav class="navbar navbar-expand-sm bg navbar-light fixed-top" style="background-color: #245a2c;">
+    <!-- Brand/logo -->
+    <img src="../images/logo.png" style="width: 8%; height: 8%;">
+    <a class="navbar-brand"
+      style="font-family: 'Kanit', sans-serif; font-weight: bold; color: white; margin-left: 1100px;">Cek
+      KesehatanTanaman Anda</a>
+  </nav>
+
+  <div class="container" style="font-family: 'Ovo', serif;">
+    <h2 style="margin-top: 80px;   font-size: 40px;color: #4c7031;text-align: center;" id="result1">Ketauhi kondisi
+      tanamanu sekarang
+    </h2>
+    <p style="font-size: 20px; margin-top: -20px;color: #4c7031;text-align: center;" id="result2">Masukkan foto daun
+      tanamanmu !</p>
+
+    <div class="form-group">
+      <label for="Gambar Daun Tanaman">Gambar Daun Tanaman</label>
+      <div>
+        <div class="inputoutput">
+          <img id="imageSrc" alt="No Image" />
+          <div class="caption" style="margin-top: 10px"> <input type="file" id="fileInput" name="file" /></div>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <button type="button" class="btn btn-primary" style="padding-left: 20px;padding-right: 20px;"
+        onclick="loadModel()">Predict</button>
+    </div>
+  </div>
+  <script src="../process/script.js"></script>
+</body>
+
+</br></br></br></br></br></br></br></br>
+<div class="ketentuan" style="margin-top:20px; background-color: #fff0cb; padding-bottom:15px;">
+  <div class="row">
+    <div class="col" style="margin-right: 10px; text-align: justify; margin-top: 10pt; margin-left: 70px;">
+      Website prediksi kesehatan tanaman Anda dengan memanfaatkan machine learning dan computer vision. Proyek ini
+      dilakukan untuk diikutkan dalam Turnamen Sains Data Nasional 2022.</div>
+    <div class="col" style="text-align: justify; margin-top: 10pt; margin-right: 10pt;">
+      <H6>ALENG</H6>
+      <p>
+        Alexander Bryan Wiratman
+        <br>
+        Airlangga Tantra
+      </p>
+    </div>
+  </div>
+</div>
+<footer style="margin-top: 10pt; margin-left: 10pt; font-family: 'Ovo', serif; text-align: center;">&copy; 2022 ALENG
+</footer>
+</div>
+</html>

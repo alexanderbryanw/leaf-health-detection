@@ -1,0 +1,218 @@
+/**********************************/
+/********** General CSS ***********/
+/**********************************/
+body {
+    color: #353535;
+    font-weight: 400;
+    background: #fff0cb;
+}
+
+hr{
+    margin: 8px 0px;
+}
+
+a {
+    color: green;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #353535;
+    outline: none;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Ovo', serif;
+    font-weight: 900;
+}
+
+h2 {
+    font-family: 'Ovo', serif;
+    font-weight: 700;
+}
+
+.container-fluid {
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.btn {
+    font-family: 'Ovo', serif;
+    color: green;
+    background: #ffffff;
+    border: 1px solid green;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+    font-family: 'Ovo', serif;
+    color: #ffffff;
+    background: green;
+    box-shadow: none;
+}
+
+
+
+/**********************************/
+/******* Product Detail CSS *******/
+/**********************************/
+.product-detail {
+    position: relative;
+    width: 100%;
+    padding: 15px 0;
+    margin-top: 80px;
+}
+
+.product-detail .product-detail-top,
+.product-detail .product-detail-bottom {
+    font-family: 'Ovo', serif;
+    margin-bottom: 30px;
+}
+
+.product-detail .product-detail-top {
+    padding: 0;
+    background: #ffffff;
+}
+
+.product-detail .product-slider-single img {
+    width: 100%;
+    padding-left: 32px;
+}
+
+.product-detail .product-slider-single-nav {
+    margin: 15px 30px 30px 30px;
+    border: 3px double green;
+}
+
+.product-detail .product-slider-single-nav .slider-nav-img {
+    border-right: 1px solid green;
+    overflow: hidden;
+}
+
+.product-detail .product-slider-single-nav img {
+    width: 100%;
+    transition: all .3s;
+}
+
+.product-detail .product-slider-single-nav img:hover {
+    transform: scale(1.2);
+}
+
+.product-detail .product-content,
+.product-detail .product-content .title,
+.product-detail .product-content .price,
+.product-detail .product-content .action {
+    position: relative;
+    width: 100%;
+}
+
+.product-detail .product-content {
+    padding: 30px;
+}
+
+
+.product-detail .product-content .title h2 {
+    font-family: 'Ovo', serif;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+
+.product-detail .product-content .price,
+.product-detail .product-content .p-size{
+    font-family: 'Ovo', serif;
+    margin-bottom: 15px;
+}
+
+.product-detail .product-content .price h4,
+.product-detail .product-content .p-size h4 {
+    font-family: 'Ovo', serif;
+    display: inline-block;
+    width: 80px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.product-detail .product-content .p-size img{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+}
+
+.product-detail .product-content .insert-image{
+    margin-bottom: 15px;
+}
+
+.product-detail .product-content .insert-image{
+    display: flex;
+    align-items: center;
+}
+
+.product-detail .product-content .insert-image div{
+    margin-right: 8px;
+}
+
+.product-detail .product-content .insert-image img{
+    width: 40px;
+    height: 40px;
+}
+
+.product-detail .product-content .price p {
+    font-family: 'Ovo', serif;
+    display: inline-block;
+    color: green;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.product-detail .product-content .price span {
+    color: #999999;
+    text-decoration: line-through;
+    margin-left: 12px;
+}
+
+.product-detail .product-content .action a:first-child {
+    margin-right: 11px;
+}
+
+.product-detail .product-content .action a i {
+    margin-right: 5px;
+}
+
+.product-detail .nav.nav-pills .nav-link {
+    color: green;
+    background: #000000;
+    border-radius: 0;
+    transition: all .3s;
+}
+
+.product-detail .nav.nav-pills .nav-link:hover,
+.product-detail .nav.nav-pills .nav-link.active {
+    color: #000000;
+    background: green;
+}
+
+.product-detail .tab-content {
+    font-family: 'Ovo', serif;
+    background: #ffffff;
+    padding: 25px 5px 15px 0px;
+}
+
+.product-detail .tab-content ul {
+    margin: 0;
+    padding: 0;
+}
+
+.product-detail .tab-content ul li {
+    margin-bottom: 10px;
+}
+
+.product-detail .tab-content ul li::before {
+    font-weight: 900;
+    padding-right: 5px;
+}
